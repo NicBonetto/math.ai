@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Roboto:100,200,300,400,500,600');
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.typewriter h1 {
+  color: #fff;
+  padding: 1.5px;
+  font-family: 'Roboto';
+  font-weight: 200;
+  font-size: 60px;
+  overflow: hidden;
+  border-right: .05em solid transparent;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .12em;
+  max-width: 245px;
+  animation:
+    blink-caret .40s step-end 8 alternate,
+    typing 1s steps(7, end) forwards;
+}
+
+.typewriter2 p {
+  padding: 1.5px;
+  color: #fff;
+  font-family: 'Roboto';
+  overflow: hidden;
+  border-right: .12em solid transparent;
+  margin: 0 auto;
+  white-space: nowrap;
+  letter-spacing: .15em;
+  animation:
+    pause 4s step-end,
+    blink-caret .40s step-end infinite alternate,
+    typing 2s steps(20, end) 4s;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  50% { border-color: #F65026 }
+  100% { border-color: transparent }
+}
+
+@keyframes pause {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
